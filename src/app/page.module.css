@@ -15,10 +15,8 @@
 .h1 {
   position: relative;
   color: #ffffff;  
-  font-size: 2rem;
-  line-height: 0.9;
-  text-align: center;
-  padding-top: 30px;
+  font-size: 1.8rem;
+  padding: 60px 50px;
 }
 
 .header::before {
