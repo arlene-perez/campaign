@@ -9,17 +9,10 @@ export default function Home() {
     <main className={styles.main}>
       <div className={styles.description}>
       </div>
-      <div className={styles.header}></div>
-        <h2>Wedding Website Coming Soon!</h2>
-      <div className={styles.center}>
-        <Image
-          src="/headerImage.jpg"
-          alt="Header Image"
-          width={1000}
-          height={700}
-          priority
-        />
+      <div className={styles.header}>
+        <h1 className={styles.h1}>Wedding Website Coming Soon!</h1>
       </div>
+      {/* <div className={styles.center}></div> */}
 
       {/* <div className={styles.grid}>
         <a

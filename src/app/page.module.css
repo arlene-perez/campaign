@@ -3,12 +3,32 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
   min-height: 100vh;
 }
 
 .header {
-  /* margin-top: 30px; */
+  height: 100vh;
+  width: 100%;
+  background: url(../../public/headerImage.jpg) no-repeat center center/cover;
+}
+
+.h1 {
+  position: relative;
+  color: #ffffff;  
+  font-size: 2rem;
+  line-height: 0.9;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0,0,0,0.2);
 }
 
 .description {
