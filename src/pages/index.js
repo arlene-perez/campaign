@@ -10,6 +10,9 @@ export default function Home() {
       <div className={styles.header}>
         <NavBar/>
       </div>
+      <div className={styles.homeImage}>
+        <span>&nbsp;</span>
+      </div>
     </main>
   )
 }
