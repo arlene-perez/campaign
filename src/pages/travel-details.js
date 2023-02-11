@@ -56,7 +56,7 @@ const TravelDetailsPage = () => {
       <div className={styles.header}>
         <NavBar/>
       </div>
-      <PageTitle title="Wedding Day Details"/>
+      <PageTitle title="Wedding Date: Friday October 13, 2023"/>
       {renderWeddingSections()}
     </div>
   )

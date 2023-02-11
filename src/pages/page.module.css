@@ -300,7 +300,8 @@
 .rsvpPage,
 .weddingPartyPage,
 .ourStoryPage,
-.travelDetailsPage {
+.travelDetailsPage,
+.faqPage {
   text-align: center;
   color: #efcdaf;
 }
@@ -353,7 +354,8 @@
 }
 
 .weddingImage img,
-.weddingMapsImage img {
+.weddingMapsImage img,
+.ourStoryImage img {
   width: 100%;
   height: 100%;
 }
@@ -389,4 +391,28 @@
   max-width: 300px;
   margin: 0 auto;
   margin-bottom: 10px;
+}
+
+.questionSection {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.question {
+  font-weight: bold;
+}
+
+.faqSection {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.ourStoryImage {
+  width: 100vh;
+  margin: 0 auto;
+  /* height: 500px; */
+}
+
+.ourStoryImage img {
+  border-radius: 5px;
 }

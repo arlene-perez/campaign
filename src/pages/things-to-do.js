@@ -3,19 +3,16 @@ import styles from '../pages/page.module.css';
 
 import NavBar from "@/components/NavBar";
 
-const OurStoryPage = () => {
+const ThingsToDoPage = () => {
   return (
     <div className={styles.ourStoryPage}>
       <div className={styles.header}>
         <NavBar/>
       </div>
-      <PageTitle title="Our Story Page"/>
+      <PageTitle title="Things To Do in NOLA"/>
       <h2>Details coming soon!</h2>
-      <div className={styles.ourStoryImage}>
-        <img src="cocoImage.jpg" />
-      </div>
     </div>
   )
 }
 
-export default OurStoryPage;
+export default ThingsToDoPage;

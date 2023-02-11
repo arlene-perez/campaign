@@ -10,6 +10,7 @@ const MENU_LIST = [
   {text: "Wedding Party", href: "/wedding-party"},
   {text: "Travel Details", href: "/travel-details"},
   {text: "Q&A", href: "/faq"},
+  {text: "Things To Do", href: "/things-to-do"},
   {text: "RSVP", href: "/rsvp"},
   {text: "Honeymoon Fund", href: "/honeymoon-fund"}
 ]
