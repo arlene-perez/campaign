@@ -43,7 +43,7 @@ const QAPage = () => {
       <div className={styles.faqSection}>
         {FAQ.map((item, index) => {
           return (
-            <div className={styles.questionSection}>
+            <div className={styles.questionSection} key={index}>
               <div className={styles.question}>{item.question}</div>
               <div>{item.answer}</div>
             </div>
