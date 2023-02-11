@@ -28,7 +28,7 @@ const HotelDetails = ({title, imageSrc, href, priceText}) => {
       <div className={styles.weddingSectionTitle}>Hotel Accomodations</div>
       {HOTEL_DETAILS.map((item, index) => {
         return (
-          <div className={styles.hotel}>
+          <div className={styles.hotel} key={index}>
             <div className={styles.hotelPrice}>{item.priceText}</div>
             <div className={styles.weddingImage}>
               <img src={item.imageSrc} />
