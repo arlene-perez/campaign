@@ -276,7 +276,7 @@
   display: inline-block;
   width: 50px;
   height: 70px;
-  background: url(../../public/wedding-logo.png) no-repeat center center/cover;
+  background: url(../public/wedding-logo.png) no-repeat center center/cover;
 }
 
 .navlinks {
@@ -314,7 +314,7 @@
   display: block;
   width: 100%;
   height: 100%;
-  background: url(../../public/headerImage.jpg) no-repeat center center/cover;
+  background: url(../public/headerImage.jpg) no-repeat center center/cover;
 }
 
 .wedding {
