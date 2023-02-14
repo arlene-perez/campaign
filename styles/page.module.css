@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+
 .main {
   /* display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center; */
   min-height: 100vh;
+  font-family: 'Playfair Display', serif;
 }
 
 .header {
@@ -317,7 +320,6 @@
   display: block;
   width: 100%;
   height: 100%;
-  background: url(../public/headerImage.jpg) no-repeat center center/cover;
 }
 
 .wedding {
@@ -425,6 +427,7 @@
   --slide-size: 100%;
   --slide-height: 19rem;
   /* padding: 1.6rem; */
+  margin-bottom: 10px;
 }
 
 @media (min-width: 650px) {
@@ -456,4 +459,33 @@
   height: var(--slide-height);
   width: 100%;
   object-fit: cover;
+}
+
+.homepageSection {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 1.25rem;
+}
+
+.homepageNames {
+  margin-bottom: 15px;
+  font-size: 1.75rem;
+}
+
+@media (min-width: 650px) {
+  .homepageNames {
+    font-size: 3rem;
+  }
+}
+
+.homepageText {
+  margin-bottom: 10px;
+}
+
+@media (min-width: 650px) {
+  .homepageText {
+    font-size: 1.75rem;
+  }
 }
