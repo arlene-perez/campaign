@@ -1,7 +1,6 @@
 import PageTitle from "../components/PageTitle";
-import styles from '../pages/page.module.css';
+import styles from '../styles/page.module.css';
 
-import NavBar from "@/components/NavBar";
 const FAQ = [
   {
     question: "What is the wedding attire?",
@@ -35,9 +34,6 @@ const FAQ = [
 const QAPage = () => {
   return (
     <div className={styles.faqPage}>
-      <div className={styles.header}>
-        <NavBar/>
-      </div>
       <PageTitle title="Q & A"/>
       <h2>More questions coming soon!</h2>
       <div className={styles.faqSection}>

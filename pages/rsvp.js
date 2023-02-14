@@ -1,14 +1,9 @@
 import PageTitle from "../components/PageTitle";
-import styles from '../pages/page.module.css';
-
-import NavBar from "@/components/NavBar";
+import styles from '../styles/page.module.css';
 
 const RsvpPage = () => {
   return (
     <div className={styles.rsvpPage}>
-      <div className={styles.header}>
-        <NavBar/>
-      </div>
       <PageTitle title="RSVP Page"/>
       <h2>RSVP Form coming soon!</h2>
     </div>

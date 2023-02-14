@@ -1,5 +1,5 @@
 import Link from "next/link";
-import styles from '../pages/page.module.css';
+import styles from '../styles/page.module.css';
 
 const HOTEL_DETAILS = [
   {

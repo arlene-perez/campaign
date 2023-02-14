@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import styles from '../pages/page.module.css';
+import styles from '../styles/page.module.css';
 
 const WeddingSection = ({key, sectionTitle, title, time, imageSrc, href, mapsImage, directionsLink}) => {
   return (

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import styles from '../pages/page.module.css';
+import styles from '../styles/page.module.css';
 
 import NavItem from "./NavItem";
 
@@ -17,7 +17,7 @@ const MENU_LIST = [
 
 const NavBar = () => {
   return (
-    <header>
+    <header className={styles.header}>
       <nav className={styles.navbar}>
         <Link href={"/"} className={styles.logo}>
         </Link>

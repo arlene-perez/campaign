@@ -1,7 +1,6 @@
 import PageTitle from "../components/PageTitle";
-import styles from '../pages/page.module.css';
+import styles from '../styles/page.module.css';
 
-import NavBar from "@/components/NavBar";
 import WeddingSection from "@/components/WeddingSection";
 import HotelDetails from "@/components/HotelDetails";
 
@@ -53,9 +52,6 @@ const renderWeddingSections = () => {
 const TravelDetailsPage = () => {
   return (
     <div className={styles.travelDetailsPage}>
-      <div className={styles.header}>
-        <NavBar/>
-      </div>
       <PageTitle title="Wedding Date: Friday October 13, 2023"/>
       {renderWeddingSections()}
     </div>
