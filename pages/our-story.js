@@ -3,12 +3,14 @@ import styles from '../styles/page.module.css';
 
 const OurStoryPage = () => {
   return (
-    <div className={styles.ourStoryPage}>
-      <PageTitle title="Our Story Page"/>
-      <h2>Details coming soon!</h2>
-      <div className={styles.ourStoryImage}>
-        <img src="cocoImage.jpg" />
-      </div>
+    <div className={styles.pageOuter}>
+      <div className={styles.ourStoryPage}>
+        <PageTitle title="Our Story Page"/>
+        <h2>Please excuse us as we are currently writing our love story...</h2>
+        <div className={styles.ourStoryImage}>
+          <img src="cocoImage.jpg" />
+        </div>
+    </div>
     </div>
   )
 }

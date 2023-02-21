@@ -16,7 +16,7 @@ const FAQ = [
   },
   {
     question: "Is this an adults only wedding?",
-    answer: "We love your children, but due to space restrictions we cannot accommodate guests under age 18 unless they are in our wedding party. So sorry! We appreciate your understanding."
+    answer: "We love your children, but due to space restrictions we cannot accommodate kids unless they are in our wedding party. So sorry!"
   },
   {
     question: "Which hotel are you staying at?",
@@ -30,10 +30,15 @@ const FAQ = [
     question: "Where should I stay?",
     answer: "Anywhere in French Quarter is ideal! If you can find a hotel on Canal Street such as the Sheraton or the Best Western, it's a busy street."
   },
+  {
+    question: "How many guests are included in my invite?",
+    answer: "We will be updating our RSVP form soon, which is where you will see how many tickets we have reserved for you."
+  },
 ]
 const QAPage = () => {
   return (
-    <div className={styles.faqPage}>
+    <div className={styles.pageOuter}>
+      <div className={styles.faqPage}>
       <PageTitle title="Q & A"/>
       <h2>More questions coming soon!</h2>
       <div className={styles.faqSection}>
@@ -46,6 +51,7 @@ const QAPage = () => {
           )
         })}
       </div>
+    </div>
     </div>
   )
 }
