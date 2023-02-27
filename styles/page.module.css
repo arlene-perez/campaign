@@ -232,8 +232,9 @@
 }
 
 .embla__slide__img {
+  position: relative !important;
   display: block;
-  height: var(--slide-height);
+  /* height: var(--slide-height) !important; */
   width: 100%;
   object-fit: cover;
 }
@@ -453,4 +454,12 @@
   transform-origin: 1px;
   transition: all 0.3s linear;
   float: right;
+}
+
+.formSection {
+  display: block;
+}
+
+.dropDownForm {
+  max-width: 500px;
 }

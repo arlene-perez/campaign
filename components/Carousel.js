@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
+import Image from 'next/image';
 
 import styles from '../styles/page.module.css';
 
@@ -11,11 +12,18 @@ export const Carousel = (props) => {
   return (
     <div className={styles.embla} ref={emblaRef}>
       <div className={styles.embla__container}>
-      {slides.map((src, index) => (
+      {slides.map((src, index) => {
+        return (
         <div className={styles.embla__slide} key={index}>
-          <img className={styles.embla__slide__img} src={src} />
+          <Image
+            src={src}
+            alt={index}
+            className={styles.embla__slide__img}
+            fill
+            objectFit="contain"
+          />
         </div>
-      ))}
+      )})}
       </div>
     </div>
   )
