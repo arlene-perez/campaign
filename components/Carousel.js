@@ -5,9 +5,14 @@ import Image from 'next/image';
 
 import styles from '../styles/page.module.css';
 
+const autoplayOptions = {
+  delay: 4000,
+  rootNode: (emblaRoot) => emblaRoot.parentElement,
+}
+
 export const Carousel = (props) => {
   const { slides } = props
-  const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay()])
+  const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay(autoplayOptions)])
 
   return (
     <div className={styles.embla} ref={emblaRef}>
