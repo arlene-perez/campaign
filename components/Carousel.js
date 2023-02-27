@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 import styles from '../styles/page.module.css';
 import IMAGE_ONE from '../public/image1.jpg';
-import IMAGE_TWO from '../public/imageSecond.jpg';
+import IMAGE_TWO from '../public/image4.jpg';
 import IMAGE_THREE from '../public/image3.jpg';
 
 // const autoplayOptions = {
