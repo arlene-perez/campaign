@@ -203,8 +203,9 @@
 .embla {
   --slide-spacing: 1rem;
   --slide-size: 100%;
-  --slide-height: 19rem;
+  --slide-height: 25rem;
   padding: 1.6rem;
+  overflow: hidden;
 }
 .embla__viewport {
   overflow: hidden;
@@ -220,10 +221,15 @@
   min-width: 0;
   padding-left: var(--slide-spacing);
   position: relative;
+  height: 15rem;
+}
+@media (min-width: 650px) {
+  .embla__slide {
+    height: 30rem;
+  }
 }
 .embla__slide__img {
   display: block;
-  height: var(--slide-height);
   width: 100%;
   object-fit: cover;
 }

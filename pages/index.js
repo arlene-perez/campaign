@@ -4,8 +4,8 @@ import { Carousel } from '@/components/Carousel';
 
 // import NavBar from '@/components/NavBar.js';
 
-const IMAGE_URLS = ['/image1.jpg','/image3.jpg','/image4.jpg','/image5.jpg', '/image6.jpg', '/image7.jpg','/image8.jpg','/image9.jpg','/image11.jpg','/image13.jpg'];
-const OPTIONS = {}
+const IMAGE_URLS = ['/image1.jpg','/imageSecond.jpg', '/image3.jpg','/image4.jpg','/image5.jpg', '/image6.jpg', '/image7.jpg','/image8.jpg','/image9.jpg','/image11.jpg','/image13.jpg'];
+const OPTIONS = { loop: true}
 
 import Head from 'next/head'
 

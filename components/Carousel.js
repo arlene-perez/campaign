@@ -7,7 +7,11 @@ import styles from '../styles/page.module.css';
 
 export const Carousel = (props) => {
   const { slides, options } = props
-  const [emblaRef] = useEmblaCarousel(options, [Autoplay()])
+  const [emblaRef, emblaApi] = useEmblaCarousel(options, [Autoplay()])
+
+  useEffect(() => {
+    if (emblaApi) emblaApi.reInit()
+  }, [emblaApi, slides])
 
   return (
     <div className={styles.embla}>
@@ -16,10 +20,11 @@ export const Carousel = (props) => {
         {slides.map((src, index) => {
           return (
           <div className={styles.embla__slide} key={index}>
-            <img
+            <Image
               src={src}
               alt={index}
               className={styles.embla__slide__img}
+              fill
             />
           </div>
         )})}
