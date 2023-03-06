@@ -12,10 +12,7 @@ const RsvpPage = () => {
       <div className={styles.rsvpPage}>
         <PageTitle title="RSVP Page"/>
         <h2>RSVP Form coming soon!</h2>
-        <div className={styles.dropDownForm}>
-        <Dropdown />
-        </div>
-        <Form />
+        
       </div>
     </div>
   )

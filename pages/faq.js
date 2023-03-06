@@ -8,7 +8,7 @@ const FAQ = [
   },
   {
     question: "Are there any group flight discounts?",
-    answer: "We need to wait until 2/17 and will keep you all posted"
+    answer: "Currently we were not able to provide any discounts but are working with possibly American/Southwest. Southwest will release its flights for 10/13 on March 9th."
   },
   {
     question: "When are you(Arlene/Christian) getting to New Orleans?",
