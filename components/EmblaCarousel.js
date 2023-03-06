@@ -20,11 +20,10 @@ export const Carousel = (props) => {
         {slides.map((src, index) => {
           return (
           <div className={styles.embla__slide} key={index}>
-            <Image
+            <img
               src={src}
               alt={index}
               className={styles.embla__slide__img}
-              fill
             />
           </div>
         )})}

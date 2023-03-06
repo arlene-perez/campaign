@@ -2,6 +2,7 @@ import Link from "next/link";
 
 import styles from '../styles/page.module.css';
 import Button from '@/components/Button';
+import Image from 'next/image';
 
 const WeddingSection = (item) => {
   const {key, sectionTitle, title, time, imageSrc, href, mapsImage, calendarLink } = item;
@@ -9,7 +10,7 @@ const WeddingSection = (item) => {
   return (
     <div className={styles.weddingSection}>
       <div className={styles.weddingImage}>
-        <img src={imageSrc}></img>
+        <Image src={imageSrc}/>
       </div>
       <div className={styles.weddingSectionTitle}>{sectionTitle}</div>
       <div className={styles.weddingTime}>Time: {time}</div>

@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import styles from '../styles/page.module.css';
-import { Carousel } from '@/components/Carousel';
+import Slideshow  from '@/components/Slideshow.js';
 
 // import NavBar from '@/components/NavBar.js';
 
@@ -19,20 +19,30 @@ export default function Home() {
       <Head>
         <meta property="og:title" content="Wedding 2023" key="title" />
       </Head>
-      <div className={styles.sandbox__carousel}>
-        <Carousel slides={IMAGE_URLS} options={OPTIONS}/>
-        <div className={styles.homepageSection}>
-          <div className={styles.homepageNames}>
-          Christian & Arlene
-          </div>
-          <div className={styles.homepageText}>
-          Friday, October 13, 2023
-          </div>
-          <div className={styles.homepageText}>
-          New Orleans, LA
-          </div>
+      <div className={styles.main}>
+      <div className={styles.homepageSection}>
+        <div className={styles.homepageImageContainer}>
+            <Image 
+              src="/image1.jpg"
+              fill
+              alt="couple picture"
+              className={styles.homepageImage}
+            />
         </div>
+        <div className={styles.homepageNames}>
+          Christian & Arlene
+        </div>
+        <div className={styles.homepageText}>
+          Friday, October 13, 2023
+        </div>
+        <div className={styles.homepageText}>
+          New Orleans, LA
+      </div>
+    </div>
       </div>
     </div>
   )
 }
+
+{/* <Slideshow slides={IMAGE_URLS}/> */}
+

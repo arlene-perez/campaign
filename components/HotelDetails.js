@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styles from '../styles/page.module.css';
+import Image from 'next/image';
 
 const HOTEL_DETAILS = [
   {
@@ -35,7 +36,7 @@ const HotelDetails = ({title, imageSrc, href, priceText}) => {
               </Link>
             </div>
             <div className={styles.weddingImage}>
-              <img src={item.imageSrc} />
+              <Image src={item.imageSrc} />
             </div>
           </div>
         )
