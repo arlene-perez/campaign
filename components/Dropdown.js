@@ -7,16 +7,24 @@ import Select, { SelectChangeEvent } from '@mui/material/Select';
 
 import guests from '../files/numberOfGuests';
 
+const guestExample = [
+  {"Jules Alaniz": 2}, {"Paula Alcazar": 1}, {"Ylyza Ang": 2}
+]
+
  const Dropdown = (props) => {
+  const [guestCount, setGuestCount] = React.useState(0);
   const [name, setName] = React.useState('');
 
-  const handleChange = () => {
-    setName(event?.target?.dataset?.value);
-    props.onSelectGuest();
+  const handleChange = (event) => {
+    const selectedName = event?.target?.value;
+    const guestDetails = guests.filter(guest => guest.guestName === selectedName);
+    setName(selectedName);
+    setGuestCount(guestDetails[0]["numberOfGuests"]);
   };
 
   return (
-    <Box sx={{ minWidth: 120 }}>
+    <div>
+      <Box sx={{ minWidth: 120, marginBottom: 5 }}>
       <FormControl fullWidth>
         <InputLabel id="demo-simple-select-label">Name</InputLabel>
         <Select
@@ -34,6 +42,8 @@ import guests from '../files/numberOfGuests';
         </Select>
       </FormControl>
     </Box>
+    <h2>Total Number of Guests: {guestCount}</h2>
+    </div>
   );
 }
 

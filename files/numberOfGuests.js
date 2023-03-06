@@ -1,7 +1,7 @@
 const guests =
     [
       {
-        guestName: "Jules Alaniz",
+        guestName: "Jules Alaniz: Total Guests 2",
         numberOfGuests: "2"
       },
 

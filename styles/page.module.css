@@ -517,6 +517,7 @@
 
 .dropDownForm {
   max-width: 500px;
+  margin: 0 auto 90px;
 }
 
 .slideshow {
@@ -548,5 +549,9 @@
   width: 100%;
   position: relative !important;
   max-height: 490px;
+}
+
+.rsvpDescription {
+  margin-bottom: 30px;
 }
 
