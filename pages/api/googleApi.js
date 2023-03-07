@@ -54,6 +54,7 @@ export default async function handler(
             data: response.data
         })
     }catch (e) {
+        console.log("error", e )
         return res.status(e.code).send({message: e.message})
     }
 
