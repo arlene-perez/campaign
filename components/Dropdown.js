@@ -6,44 +6,111 @@ import FormControl from '@mui/material/FormControl';
 import Select, { SelectChangeEvent } from '@mui/material/Select';
 
 import guests from '../files/numberOfGuests';
-
-const guestExample = [
-  {"Jules Alaniz": 2}, {"Paula Alcazar": 1}, {"Ylyza Ang": 2}
-]
+import styles from '../styles/page.module.css';
 
  const Dropdown = (props) => {
   const [guestCount, setGuestCount] = React.useState(0);
   const [name, setName] = React.useState('');
+  const [isAttending, setIsAttending] = React.useState('');
 
-  const handleChange = (event) => {
-    const selectedName = event?.target?.value;
-    const guestDetails = guests.filter(guest => guest.guestName === selectedName);
-    setName(selectedName);
-    setGuestCount(guestDetails[0]["numberOfGuests"]);
-  };
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    let form = {
+        name,
+        guestCount,
+        isAttending
+    }
+
+    const rawResponse = await fetch('/api/googleApi', {
+        method: 'POST',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(form)
+    });
+
+    const content = await rawResponse.json();
+
+    debugger;
+
+    // print to screen
+    alert("Thanks for RSVPing!")
+
+    // Reset the form fields
+    setGuestCount('')
+    setIsAttending('')
+    setName('')
+}
 
   return (
     <div>
+      <form onSubmit={handleSubmit}>
+      <div>
+        <Box sx={{ minWidth: 120, marginBottom: 5 }}>
+        <FormControl fullWidth>
+          <InputLabel id="demo-simple-select-label">Name</InputLabel>
+          <Select
+            labelId="demo-simple-select-label"
+            id="demo-simple-select"
+            value={name}
+            label="Name"
+            onChange={e => setName(e.target.value)}
+          >
+            {guests.map((item, index) => {
+            return (
+              <MenuItem key={index} value={item.guestName}>{item.guestName}</MenuItem>
+            )
+          })}
+          </Select>
+        </FormControl>
+        </Box>
+    </div>
+    <div>
       <Box sx={{ minWidth: 120, marginBottom: 5 }}>
       <FormControl fullWidth>
-        <InputLabel id="demo-simple-select-label">Name</InputLabel>
+        <InputLabel id="demo-simple-select-label">Total Guest Count</InputLabel>
         <Select
           labelId="demo-simple-select-label"
           id="demo-simple-select"
-          value={name}
-          label="Name"
-          onChange={handleChange}
+          value={guestCount}
+          label="Total Guest Count"
+          onChange={e => setGuestCount(e.target.value)}
         >
-          {guests.map((item, index) => {
-          return (
-            <MenuItem key={index} value={item.guestName}>{item.guestName}</MenuItem>
-          )
-        })}
+          <MenuItem key={0} value={0}>{0}</MenuItem>
+          <MenuItem key={1} value={1}>{1}</MenuItem>
+          <MenuItem key={2} value={2}>{2}</MenuItem>
+          <MenuItem key={3} value={3}>{3}</MenuItem>
+          <MenuItem key={4} value={4}>{4}</MenuItem>
+          <MenuItem key={5} value={5}>{5}</MenuItem>
         </Select>
       </FormControl>
-    </Box>
-    <h2>Total Number of Guests: {guestCount}</h2>
+      </Box>
     </div>
+    <div>
+      <Box sx={{ minWidth: 120, marginBottom: 5 }}>
+      <FormControl fullWidth>
+        <InputLabel id="demo-simple-select-label">Will you be attending?</InputLabel>
+        <Select
+          labelId="demo-simple-select-label"
+          id="demo-simple-select"
+          value={isAttending}
+          label="Will you be attending?"
+          onChange={e => setIsAttending(e.target.value)}
+        >
+          <MenuItem key={0} value={'Yes'}>{'Yes! I am so excited!'}</MenuItem>
+          <MenuItem key={1} value={'No'}>{'No, but I am so happy for you two!'}</MenuItem>
+        </Select>
+      </FormControl>
+      </Box>
+    </div>
+    <div className={styles.weddingSectionButton}>
+      <button>Submit</button>
+    </div>
+  </form>
+  </div>
+    
   );
 }
 

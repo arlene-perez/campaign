@@ -9,7 +9,7 @@ const OurStoryPage = () => {
         <PageTitle title="Our Story Page"/>
         <h2>Please excuse us as we are currently writing our love story...</h2>
         <div className={styles.ourStoryImage}>
-          <Image src="cocoImage.jpg" />
+          <img src="cocoImage.jpg"/>
         </div>
     </div>
     </div>

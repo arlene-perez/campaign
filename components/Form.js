@@ -1,34 +1,64 @@
-import styles from '../styles/page.module.css';
+import {useState} from "react";
 
 const Form = () => {
-  return (
-    <form>
-      <div className={styles.formSection}>
-        <label>First Name</label>
-        <input name="first_name" />
-      </div>
-      <div className={styles.formSection}>
-        <label>Last Name</label>
-        <input name="last_name" />
-      </div>
-      <div className={styles.formSection}>
-        <label>Will you be attending?</label>
-        <input type="radio" id="attend" name="attend" value="Yes" />
-        <input type="radio" id="attend" name="attend" value="No" />
-      </div>
-      <div className={styles.formSection}>
-        <label>From the number listed above, how many guests will be attending?</label>
-        <input type="radio" id="attend" name="numberOfGuests" value="Yes" />0
-        <input type="radio" id="attend" name="numberOfGuests" value="No" />1
-        <input type="radio" id="attend" name="numberOfGuests" value="No" />2
-        <input type="radio" id="attend" name="numberOfGuests" value="No" />3
-        <input type="radio" id="attend" name="numberOfGuests" value="No" />4
-        <input type="radio" id="attend" name="numberOfGuests" value="No" />5
-        
-      </div>
-    </form>
-  );
-  
-};
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [phone, setPhone] = useState('');
+    const [message, setMessage] = useState('');
+
+    const handleSubmit = async () => {
+        e.preventDefault();
+
+        // let form = {
+        //     name,
+        //     email,
+        //     phone,
+        //     message
+        // }
+
+        // const rawResponse = await fetch('/api/submit', {
+        //     method: 'POST',
+        //     headers: {
+        //         'Accept': 'application/json',
+        //         'Content-Type': 'application/json'
+        //     },
+        //     body: JSON.stringify(form)
+        // });
+        // const content = await rawResponse.json();
+
+        // // print to screen
+        // alert(content.data.tableRange)
+
+        // // Reset the form fields
+        // setMessage('')
+        // setPhone('')
+        // setName('')
+        // setEmail('')
+    }
+
+    return (
+        <main className="bg-gray-100 min-h-screen">
+            <div className="max-w-5xl mx-auto py-16">
+                <form className="py-4 space-y-4" onSubmit={handleSubmit}>
+                    <div className="flex items-center justify-center">
+                        <label htmlFor="name" className="sr-only">Name</label>
+                        <input value={name} onChange={e => setName(e.target.value)} type="text" name="name" id="name" className="shadow-md focus:ring-indigo-500 focus:border-indigo-500 block w-64 sm:text-md border-gray-300 rounded-md" placeholder="Your Name" />
+                    </div>
+                    <div className="flex items-center justify-center">
+                        <label htmlFor="guests" className="sr-only">Email</label>
+                        <input value={email} onChange={e => setEmail(e.target.value)} type="email" name="email" id="email" className="shadow-md focus:ring-indigo-500 focus:border-indigo-500 block w-64 sm:text-md border-gray-300 rounded-md" placeholder="Your Email" />
+                    </div>
+                    <div className="flex items-center justify-center">
+                        <label htmlFor="attending" className="sr-only">Phone</label>
+                        <input value={phone} onChange={e => setPhone(e.target.value)} type="tel" name="phone" id="phone" className="shadow-md focus:ring-indigo-500 focus:border-indigo-500 block w-64 sm:text-md border-gray-300 rounded-md" placeholder="Your Phone" />
+                    </div>
+                    <div className="flex items-center justify-center">
+                        <button type="submit" className="flex items-center justify-center text-sm w-64 rounded-md shadow py-3 px-2 text-white bg-indigo-600">Save</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    )
+}
 
 export default Form;

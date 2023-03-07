@@ -10,7 +10,7 @@ const WeddingSection = (item) => {
   return (
     <div className={styles.weddingSection}>
       <div className={styles.weddingImage}>
-        <Image src={imageSrc}/>
+        <img src={imageSrc}/>
       </div>
       <div className={styles.weddingSectionTitle}>{sectionTitle}</div>
       <div className={styles.weddingTime}>Time: {time}</div>

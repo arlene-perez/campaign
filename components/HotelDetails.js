@@ -36,7 +36,7 @@ const HotelDetails = ({title, imageSrc, href, priceText}) => {
               </Link>
             </div>
             <div className={styles.weddingImage}>
-              <Image src={item.imageSrc} />
+              <img src={item.imageSrc} />
             </div>
           </div>
         )

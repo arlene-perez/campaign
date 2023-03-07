@@ -336,7 +336,7 @@
   margin: 10px 0px;
   cursor: pointer;
   border: none;
-  width: 275px;
+  max-width: 275px;
   text-align: center;
 }
 
@@ -552,6 +552,9 @@
 }
 
 .rsvpDescription {
-  margin-bottom: 30px;
+  margin: 50px auto;
+  max-width: 700px;
 }
+
+
 
