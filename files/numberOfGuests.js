@@ -214,6 +214,10 @@ const guests =
         numberOfGuests: "1"
       },
       {
+        guestName: "Guadalupe Nunez",
+        numberOfGuests: "1"
+      },
+      {
         guestName: "Andrew Perez",
         numberOfGuests: "1"
       },
@@ -251,6 +255,10 @@ const guests =
       },
       {
         guestName: "Vincent Robles",
+        numberOfGuests: "1"
+      },
+      {
+        guestName: "Pablo Rafael",
         numberOfGuests: "1"
       },
       {
@@ -304,6 +312,10 @@ const guests =
       {
         guestName: "Chris Wilson",
         numberOfGuests: "2"
+      },
+      {
+        guestName: "Julio Yerena",
+        numberOfGuests: "1"
       },
     ]
 export default guests;
