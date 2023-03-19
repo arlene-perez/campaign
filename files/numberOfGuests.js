@@ -77,6 +77,12 @@ const guests =
         guestName: "Perla Diaz",
         numberOfGuests: "2"
       },
+
+  {
+        guestName: "Carmen Ericson",
+        numberOfGuests: "2"
+      },
+
       {
         guestName: "Jacqueline Ericson",
         numberOfGuests: "2"
