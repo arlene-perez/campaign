@@ -54,6 +54,10 @@ const guests =
         numberOfGuests: "2"
       },
       {
+        guestName: "Dalila Covarrubias",
+        numberOfGuests: "2"
+      },
+      {
         guestName: "Francisco Covarrubias",
         numberOfGuests: "2"
       },
