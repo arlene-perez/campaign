@@ -81,8 +81,12 @@ const guests =
         guestName: "Perla Diaz",
         numberOfGuests: "2"
       },
+       {
+        guestName: "Drew Donato",
+        numberOfGuests: "1"
+      },
 
-  {
+      {
         guestName: "Carmen Ericson",
         numberOfGuests: "2"
       },
@@ -172,6 +176,10 @@ const guests =
         numberOfGuests: "2"
       },
       {
+        guestName: "Brian Kim",
+        numberOfGuests: "2"
+      },
+      {
         guestName: "Samantha Lopez",
         numberOfGuests: "5"
       },
@@ -249,6 +257,10 @@ const guests =
       },
       {
         guestName: "Sig Perez",
+        numberOfGuests: "2"
+      },
+      {
+        guestName: "Misa Pham",
         numberOfGuests: "2"
       },
         {
