@@ -61,6 +61,14 @@ const guests =
         guestName: "Francisco Covarrubias",
         numberOfGuests: "2"
       },
+       {
+        guestName: "Liberato Covarrubias Sr.",
+        numberOfGuests: "2"
+      },
+         {
+        guestName: "Liberato Covarrubias Jr.",
+        numberOfGuests: "1"
+      },
       {
         guestName: "Yajaira Covarrubias",
         numberOfGuests: "2"
