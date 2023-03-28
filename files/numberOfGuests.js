@@ -312,6 +312,11 @@ const guests =
         numberOfGuests: "2"
       },
       {
+        guestName: "Ramiro Sanchez",
+        numberOfGuests: "1"
+      },
+
+      {
         guestName: "Tim Sandoval",
         numberOfGuests: "2"
       },
