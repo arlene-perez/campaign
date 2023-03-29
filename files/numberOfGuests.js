@@ -54,8 +54,20 @@ const guests =
         numberOfGuests: "2"
       },
       {
+        guestName: "Dalila Covarrubias",
+        numberOfGuests: "2"
+      },
+      {
         guestName: "Francisco Covarrubias",
         numberOfGuests: "2"
+      },
+       {
+        guestName: "Liberato Covarrubias Sr.",
+        numberOfGuests: "2"
+      },
+         {
+        guestName: "Liberato Covarrubias Jr.",
+        numberOfGuests: "1"
       },
       {
         guestName: "Yajaira Covarrubias",
@@ -77,6 +89,16 @@ const guests =
         guestName: "Perla Diaz",
         numberOfGuests: "2"
       },
+       {
+        guestName: "Drew Donato",
+        numberOfGuests: "1"
+      },
+
+      {
+        guestName: "Carmen Ericson",
+        numberOfGuests: "2"
+      },
+
       {
         guestName: "Jacqueline Ericson",
         numberOfGuests: "2"
@@ -162,6 +184,10 @@ const guests =
         numberOfGuests: "2"
       },
       {
+        guestName: "Brian Kim",
+        numberOfGuests: "2"
+      },
+      {
         guestName: "Samantha Lopez",
         numberOfGuests: "5"
       },
@@ -242,6 +268,14 @@ const guests =
         numberOfGuests: "2"
       },
       {
+        guestName: "Misa Pham",
+        numberOfGuests: "2"
+      },
+        {
+        guestName: "Lindsay Pond",
+        numberOfGuests: "2"
+      },
+      {
         guestName: "Virginia Preciado",
         numberOfGuests: "2"
       },
@@ -277,6 +311,11 @@ const guests =
         guestName: "Monica Sanchez",
         numberOfGuests: "2"
       },
+      {
+        guestName: "Ramiro Sanchez",
+        numberOfGuests: "1"
+      },
+
       {
         guestName: "Tim Sandoval",
         numberOfGuests: "2"
