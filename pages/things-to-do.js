@@ -47,33 +47,20 @@ const items = [
     description: "Las Vegas's Harrah's is in New Orleans! It's only a 4 minute walk from the hotel so you can enjoy it all weekend!"
   },
   {
-    title: "title",
-    date: "date",
-    imageSrc: "/event-jazz-bbq.png",
-    link: "link",
-    description: "description"
+    title: "Gazebo Cafe's Banana Daiquiri",
+    date: "Always Open",
+    imageSrc: "/event-gazebo.jpeg",
+    link: "https://gazebocafenola.com/",
+    description: "Other than the beignets, you must try the Banana Daiquiri at this cafe! They also have really good Muffaletta(sandwich) and live jazz music!"
   },
   {
-    title: "title",
-    date: "date",
-    imageSrc: "/event-jazz-bbq.png",
-    link: "link",
-    description: "description"
+    title: "New Orleans City Guide",
+    date: "Always Open",
+    imageSrc: "/event-guide.jpeg",
+    link: "https://www.neworleans.com/things-to-do/",
+    description: "This site creates itineraries based on the amount of days you'll be in town! They have some good food and drink recommendations!"
   },
-  {
-    title: "title",
-    date: "date",
-    imageSrc: "/event-jazz-bbq.png",
-    link: "link",
-    description: "description"
-  },
-  {
-    title: "title",
-    date: "date",
-    imageSrc: "/event-jazz-bbq.png",
-    link: "link",
-    description: "description"
-  },
+  
   
 ]
 const ThingsToDoPage = () => {
@@ -86,9 +73,11 @@ const ThingsToDoPage = () => {
           return (
             <EventItem
             {...item}
+            key={index}
             />
           )
         })}
+        <h1>Will add more things to do soon!</h1>
         </div>
       </div>
     </div>
