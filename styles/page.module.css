@@ -557,7 +557,7 @@
 }
 
 .registryPage {
-  padding: 20px 80px;
+  padding: 20px 30px;
 }
 
 .registryInnerContainer,
@@ -589,6 +589,10 @@
 
 @media (min-width: 950px) {
 
+  .registryPage {
+    padding: 20px 80px;
+  }
+
   .registryInnerContainer,
   .registryInnerContainerTwo {
     flex-direction: row;
@@ -602,6 +606,66 @@
   .registryInnerContainerText {
     font-size: 1.2rem;
   }
+}
+
+.thingsToDoPage {
+  padding: 30px;
+}
+
+.thingsToDoInner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 40px 10px;
+  align-items: stretch;
+}
+
+.eventItem {
+  flex-basis: 20%;
+  box-shadow: 20px 20px 50px grey;
+  padding: 10px;
+  background-color: #c1931a85;
+  color: white;
+  border-radius: 15px;
+}
+
+.eventItemImage,
+.eventItemTitle,
+.eventItemDate {
+  margin-bottom: 10px;
+}
+
+.eventItemTitle,
+.eventItemDate {
+  font-size: 1.2rem;
+  font-family: 'Bodoni Moda', serif;
+}
+
+.eventItemDate {
+  font-size: 1rem;
+}
+
+.eventItemDescription {
+  font-size: .85rem;
+}
+
+.eventItemImage {
+  max-height: 250px;
+  width: 250px;
+}
+
+.toDoButton button {
+  background-color: #c1931a85;
+  color: white;
+  font-size: 16px;
+  padding: 10px 60px;
+  border-radius: 5px;
+  margin: 10px 0px;
+  cursor: pointer;
+  border: none;
+  max-width: 200px;
+  text-align: center;
 }
 
 

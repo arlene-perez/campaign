@@ -20,7 +20,7 @@ const RegistryPage = () => {
         </div>
         <div className={styles.registryInnerContainerText}>
           <div className={styles.registryInnerContainerTextDescription}>
-          Your presence is enough of a present to us! But for those of you who would like to get a gift, we have put together a wish-list to help you out below by using the link. We are planning on taking our honeymoon to Europe after the wedding and cannot wait to celebrate! If you would prefer to give cash, feel free to use Venmo! We also love any e-gift cards if you would like to purchase one. Thank you again!
+          Your presence is enough of a present to us! But for those of you who would like to give a gift, we have put together a wish-list to help you out below by using the link. We are planning on taking our honeymoon to Europe after the wedding and cannot wait to celebrate! If you would prefer to give cash, feel free to use Venmo! We also love any e-gift cards if you would like to purchase one. Thank you again!
           <br></br>
           <br></br>
           Love, 
