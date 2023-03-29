@@ -3,16 +3,20 @@ import styles from '../styles/page.module.css';
 
 const FAQ = [
   {
+    question: "The reception is on a boat but I get seasick, will that be an issue?",
+    answer: "Although it's a boat, it's more of a steamboat. Think the steamboat at Disneyland! It moves so slow and will be traveling along the Mississippi River that you may not even feel it so seasickness will be very minimal if any!"
+  },
+  {
     question: "What is the wedding attire?",
-    answer: "Cocktail Attire but bring comfortable shoes for dancing the night away!"
+    answer: "Cocktail Attire but bring comfortable shoes for dancing the night away! Please do not wear white."
   },
   {
     question: "Are there any group flight discounts?",
-    answer: "Currently we were not able to provide any discounts but are working with possibly American/Southwest. Southwest will release its flights for 10/13 on March 9th."
+    answer: "Currently we were not able to provide any discounts due to it being a busy weekend. We will be traveling with Southwest since you get two free checked bags and can get travel credit if you need to cancel."
   },
   {
     question: "When are you(Arlene/Christian) getting to New Orleans?",
-    answer: "We will most likely be arriving Wednesday 10/11 and depart Monday. Some people are coming in Thursday and departing Saturday, feel free to stay as long as you want!"
+    answer: "We will be arriving Wednesday 10/11 and departing Monday! Some people are coming in Thursday and departing Saturday, feel free to stay as long as you want!"
   },
   {
     question: "Is this an adults only wedding?",
@@ -32,7 +36,7 @@ const FAQ = [
   },
   {
     question: "How many guests are included in my invite?",
-    answer: "We will be updating our RSVP form soon, which is where you will see how many tickets we have reserved for you."
+    answer: "You should have received a text from Christian/Arlene with your guest count. If you did not, please reach out to one of us!"
   },
 ]
 const QAPage = () => {
@@ -40,7 +44,6 @@ const QAPage = () => {
     <div className={styles.pageOuter}>
       <div className={styles.faqPage}>
       <PageTitle title="Q & A"/>
-      <h2>More questions coming soon!</h2>
       <div className={styles.faqSection}>
         {FAQ.map((item, index) => {
           return (

@@ -29,7 +29,7 @@
   padding: 60px 50px;
 }
 
-.honeymoonFundPage,
+.registryPage,
 .rsvpPage,
 .weddingPartyPage,
 .ourStoryPage,
@@ -555,6 +555,55 @@
   margin: 50px auto;
   max-width: 700px;
 }
+
+.registryPage {
+  padding: 20px 80px;
+}
+
+.registryInnerContainer,
+.registryInnerContainerTwo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.registryInnerContainerImage,
+.registryInnerContainerText {
+  flex: 1 100%;
+}
+
+.registryInnerContainerText {
+  background-color: #c1931a85;
+  font-family: 'Bodoni Moda', serif;
+  color: white;
+  padding: 30px;
+  border-radius: 25px;
+  font-size: 1rem;
+}
+
+.registryInnerContainterTextSection {
+  top: 25%;
+  position: relative;
+}
+
+@media (min-width: 950px) {
+
+  .registryInnerContainer,
+  .registryInnerContainerTwo {
+    flex-direction: row;
+  }
+
+  .registryInnerContainerImage,
+  .registryInnerContainerText {
+    flex-basis: 50%;
+  }
+
+  .registryInnerContainerText {
+    font-size: 1.2rem;
+  }
+}
+
 
 
 

@@ -19,7 +19,7 @@ const MENU_LIST = [
   {text: "Q&A", href: "/faq"},
   {text: "Things To Do", href: "/things-to-do"},
   {text: "RSVP", href: "/rsvp"},
-  {text: "Honeymoon Fund", href: "/honeymoon-fund"}
+  {text: "Registry", href: "/registry"}
 ]
 
 const NavBar = () => {

@@ -13,7 +13,7 @@ const TravelPage = () => {
           our guests to play it safe. Please always choose the refundable option
           when booking your flight or hotel.***</h3>
         <PageTitle title="Flights"/>
-        <h3>We are currently waiting on our requests for group rates for flights from American Airlines and Southwest leaving from LAX. We will update you as soon as we know more details.</h3>
+        <h3>Unfortunately, we were unable to get discounted group rates for flights leaving from LAX due to it being a popular weekend. We will be flying with Southwest since they provide two free checked bags as well as provide travel credit in case of cancellations.</h3>
         <PageTitle title="Hotel Accomodations"/>
         <HotelDetails />
         <h3>The prices above are based on a group rate. If interested, please fill out the form below.</h3>
