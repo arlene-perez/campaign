@@ -268,6 +268,10 @@ const guests =
         numberOfGuests: "2"
       },
       {
+        guestName: "Rene Perez",
+        numberOfGuests: "1"
+      },
+      {
         guestName: "Sig Perez",
         numberOfGuests: "2"
       },
