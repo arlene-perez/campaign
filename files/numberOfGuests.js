@@ -37,6 +37,14 @@ const guests =
         guestName: "Morten Benserud",
         numberOfGuests: "2"
       },
+       {
+        guestName: "Chepis Bernal",
+        numberOfGuests: "2"
+      },
+       {
+        guestName: "Raul Bernal",
+        numberOfGuests: "2"
+      },
       {
         guestName: "Elsa Castillo",
         numberOfGuests: "2"
@@ -255,10 +263,6 @@ const guests =
         guestName: "Carmen Perez",
         numberOfGuests: "2"
       },
-       {
-        guestName: "Valerie Perez",
-        numberOfGuests: "2"
-      },
       {
         guestName: "Brian Perez",
         numberOfGuests: "2"
@@ -277,6 +281,10 @@ const guests =
       },
       {
         guestName: "Sig Perez",
+        numberOfGuests: "2"
+      },
+      {
+        guestName: "Valerie Perez",
         numberOfGuests: "2"
       },
       {
