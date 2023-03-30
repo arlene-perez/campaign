@@ -255,6 +255,10 @@ const guests =
         guestName: "Carmen Perez",
         numberOfGuests: "2"
       },
+       {
+        guestName: "Valerie Perez",
+        numberOfGuests: "2"
+      },
       {
         guestName: "Brian Perez",
         numberOfGuests: "2"
