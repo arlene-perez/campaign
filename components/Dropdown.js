@@ -8,13 +8,18 @@ import Select, { SelectChangeEvent } from '@mui/material/Select';
 import guests from '../files/numberOfGuests';
 import styles from '../styles/page.module.css';
 
+import Spinner from '@/components/Spinner';
+
  const Dropdown = (props) => {
   const [guestCount, setGuestCount] = React.useState(0);
   const [name, setName] = React.useState('');
   const [isAttending, setIsAttending] = React.useState('');
+  const [isSubmitting, setIsSubmitting] = React.useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsSubmitting(true)
+
 
     let form = {
         name,
@@ -34,15 +39,13 @@ import styles from '../styles/page.module.css';
 
     const content = await rawResponse.json();
 
-    debugger;
-
-    // print to screen
-    alert("Thanks for RSVPing!")
+    if(content) { setIsSubmitting(false) }
 
     // Reset the form fields
     setGuestCount('')
     setIsAttending('')
     setName('')
+    props.onSubmit()
 }
 
   return (
@@ -107,7 +110,11 @@ import styles from '../styles/page.module.css';
       </Box>
     </div>
     <div className={styles.weddingSectionButton}>
-      <button>Submit</button>
+      {isSubmitting ? (
+        <div className={styles.spinner}><Spinner/></div>
+      ) : (
+        <button disabled={isSubmitting}>Submit</button>
+      )}
     </div>
   </form>
   </div>
