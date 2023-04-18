@@ -22,7 +22,15 @@ const guests =
         numberOfGuests: "2"
       },
       {
+        guestName: "Cesar Ayala",
+        numberOfGuests: "4"
+      },
+      {
         guestName: "Fernanda Ayala",
+        numberOfGuests: "4"
+      },
+      {
+        guestName: "Jesus Chuyin Ayala",
         numberOfGuests: "4"
       },
       {
@@ -146,6 +154,10 @@ const guests =
       {
         guestName: "Daniel Gadea",
         numberOfGuests: "1"
+      },
+  {
+        guestName: "Jesus Garcia",
+        numberOfGuests: "4"
       },
       {
         guestName: "Jesus Garcia",
