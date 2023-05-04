@@ -4,12 +4,13 @@ import PageTitle from "../components/PageTitle";
 import styles from '../styles/page.module.css';
 import guests from '../files/numberOfGuests';
 import Dropdown from "@/components/Dropdown";
+import Image from 'next/image';
 
 import Form from '@/components/Form';
 
 const RsvpPage = () => {
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
-  
+  const isFormOpen = false;
   const onSubmit = () => {
     setIsFormSubmitted(true);
   }
@@ -17,7 +18,14 @@ const RsvpPage = () => {
     <div className={styles.pageOuter}>
       <div className={styles.rsvpPage}>
         <PageTitle title="RSVP Page"/>
-        {isFormSubmitted ? (
+        <h3 className={styles.rsvpDescription}>We closed our RSVP form but if you have any questions, please reach out to Christian/Arlene.<br/><br/>We cannot wait to celebrate with you all!</h3>
+        <Image 
+        src="/image3.jpg"
+        fill
+        alt="event picture"
+        className={styles.homepageImage}
+      />
+        {/* {isFormSubmitted ? (
           <h1>Thanks for filling out the form!</h1>
           )
           : 
@@ -30,7 +38,7 @@ const RsvpPage = () => {
                 />
               </div>
             </div>
-          )}
+          )} */}
       </div>
     </div>
   )
