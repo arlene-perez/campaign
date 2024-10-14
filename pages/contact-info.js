@@ -7,8 +7,8 @@ const ContactPage = () => {
     <div className={styles.pageOuter}>
       <div className={styles.ourStoryPage}>
         <PageTitle title="Contact Information"/>
-        <h2>Email: arleneperezforerusd@gmail.com</h2>
-        <h2>Instagram: @arleneperezforelrancho</h2>
+        <h3>Email: arleneperezforerusd@gmail.com</h3>
+        <h3>Instagram: @arleneperezforelrancho</h3>
         {/* <div className={styles.ourStoryImage}>
           <img src="cocoImage.jpg"/>
         </div> */}
