@@ -8,8 +8,8 @@ export default function Layout({ children }) {
     <div className={styles.app}>
       <Navbar />
       <Head>
-        <title>Wedding 2023</title>
-        <meta property="og:title" content="Wedding 2023" key="title" />
+        <title>Arlene Perez for School Board</title>
+        <meta property="og:title" content="Arlene Perez for School Board" key="title" />
       </Head>
       <main>{children}</main>
     </div>

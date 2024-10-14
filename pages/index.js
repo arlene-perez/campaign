@@ -28,11 +28,11 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Wedding 2023</title>
-        <meta property="og:title" content="Wedding 2023" key="title" />
+        <title>Arlene Perez for School Board</title>
+        <meta property="og:title" content="Arlene Perez for School Board" key="title" />
       </Head>
       <Head>
-        <meta property="og:title" content="Wedding 2023" key="title" />
+        <meta property="og:title" content="Arlene Perez for School Board" key="title" />
       </Head>
       <div className={styles.main}>
       <div className={styles.homepageSection}>

@@ -7,7 +7,7 @@ export default function RootLayout({ children }) {
         <head /> will contain the components returned by the nearest parent
         head.js. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
-      <title>Wedding</title>
+      <title>Arlene Perez for El Rancho School Board</title>
       <head />
       <body>{children}</body>
     </html>
