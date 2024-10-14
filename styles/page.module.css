@@ -33,10 +33,13 @@
 .rsvpPage,
 .weddingPartyPage,
 .ourStoryPage,
+.aboutPage,
 .travelPage,
 .faqPage,
 .schedulePage,
-.thingsToDoPage {
+.thingsToDoPage,
+.endorsementsPage,
+.accomplishmentsPage {
   text-align: center;
   border-radius: 25px;;
   background-color: #fdfcfb;
@@ -47,12 +50,44 @@
   padding: 30px 15px;
 }
 
+.accomplishmentsPage iframe {
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 686px) {
+  .accomplishmentsPage iframe {
+    width: 600px;
+    height: 450px
+  }
+}
+
 .faqPage h2 {
   margin-bottom: 30px;
 }
 
 .ourStoryPage {
   padding: 30px 50px;
+}
+
+.aboutPage {
+  padding: 30px;
+}
+
+@media (min-width: 686px) {
+  .aboutPage,
+  .endorsementsPage,
+  .accomplishmentsPage {
+    padding: 30px 50px;
+  }
+}
+
+@media (min-width: 900px) {
+  .aboutPage,
+  .endorsementsPage,
+  .accomplishmentsPage {
+    padding: 30px 100px;
+  }
 }
 
 .travelPage {
@@ -132,15 +167,60 @@
   }
 }
 
+@media (min-width: 650px) {
+  .aboutImageSection {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+  }  
+}
+
+.aboutImage {
+  width: 200px;
+  height: 300px;
+  margin: 0 auto 20px;
+  display: inline;
+}
+
+.aboutImageRect {
+  display: inline;
+  margin: 0 auto 20px;
+  width: 300px;
+  height: 250px;
+}
+
 .weddingMapsImage {
   margin: 0 auto;
   height: 320px;
   width: 400px;
 }
 
+.accomplishmentsImage { 
+  width: 600px;
+  height: 400px;
+  margin: 30px auto;
+  display: inline;
+}
+
+.endorsementsImageSection {
+  text-align: center;
+}
+
+@media (min-width: 686px) {
+  .endorsementsImage { 
+    width: 300px;
+    height: 300px;
+    margin: 20px auto;
+  }
+}
+
 .weddingImage img,
 .weddingMapsImage img,
-.ourStoryImage img {
+.ourStoryImage img,
+.aboutImage img,
+.aboutImageRect img,
+.accomplishmentsImage img,
+.endorsementsImage img {
   width: 100%;
   height: 100%;
 }
@@ -314,7 +394,33 @@
 }
 
 .homepageText {
+  margin: 20px auto 0;
   margin-bottom: 10px;
+  text-align: center;
+  background-color: #fdfcfb;
+  max-width: 1260px;
+  color: #c1931a85;
+  min-height: 100vh;
+  padding: 30px 15px;
+  border-radius: 12px;
+}
+
+.aboutPageText {
+  text-align: left;
+}
+
+.aboutPageText p {
+  margin-top: 20px;
+  font-size: 1.25rem;
+}
+
+.homepageText li {
+  margin-top: 20px;
+}
+
+.homepageList { 
+  padding: 0 0 0 30px;
+  text-align: left;
 }
 
 @media (min-width: 767px) {
@@ -662,10 +768,10 @@
   font-size: 16px;
   padding: 10px 60px;
   border-radius: 5px;
-  margin: 10px 0px;
+  margin: 50px 0px;
   cursor: pointer;
   border: none;
-  max-width: 200px;
+  max-width: 250px;
   text-align: center;
 }
 

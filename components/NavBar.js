@@ -12,14 +12,19 @@ import { useState } from "react";
 
 const MENU_LIST = [
   {text: "Home", href: "/"},
-  {text: "Our Story", href: "/our-story"},
-  {text: "Wedding Party", href: "/wedding-party"},
-  {text: "Schedule", href: "/schedule"},
-  {text: "Travel", href: "/travel"},
-  {text: "Q&A", href: "/faq"},
-  {text: "Things To Do", href: "/things-to-do"},
-  {text: "RSVP", href: "/rsvp"},
-  {text: "Registry", href: "/registry"}
+  {text: "About", href: "/about"},
+  {text: "Accomplishments", href: "/accomplishments"},
+  {text: "Endorsements", href: "/endorsements"},
+  {text: "Donate", href: "/donate"},
+  {text: "Contact Info", href: "/contact-info"},
+  // {text: "Our Story", href: "/our-story"},
+  // {text: "Wedding Party", href: "/wedding-party"},
+  // {text: "Schedule", href: "/schedule"},
+  // {text: "Travel", href: "/travel"},
+  // {text: "Q&A", href: "/faq"},
+  // // {text: "Things To Do", href: "/things-to-do"},
+  // {text: "RSVP", href: "/rsvp"},
+  // {text: "Registry", href: "/registry"}
 ]
 
 const NavBar = () => {
